@@ -4,14 +4,14 @@ import '../model/ModelCart.dart';
 class CartDetailScreen extends StatelessWidget {
   final Item item;
 
-  const CartDetailScreen({Key? key, required this.item}) : super(key: key);
+  const CartDetailScreen({super.key, required this.item});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(item.name),
-        backgroundColor: Colors.blue[800],
+        backgroundColor: Colors.teal[800],
         elevation: 2,
       ),
       body: SingleChildScrollView(

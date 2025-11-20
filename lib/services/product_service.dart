@@ -3,8 +3,6 @@ import 'package:http/http.dart' as http;
 // Pastikan nama file dan path impor sudah benar
 import '../model/ModelProduct.dart';
 
-import 'package:flutter/foundation.dart';
-import 'dart:io';
 
 class ProductService {
   // Untuk Android Emulator gunakan 10.0.2.2

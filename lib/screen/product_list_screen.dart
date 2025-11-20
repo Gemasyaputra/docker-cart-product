@@ -19,7 +19,7 @@ class ProductListScreen extends StatefulWidget {
 
 class _ProductListScreenState extends State<ProductListScreen> {
   // CATATAN: Menggunakan IP lokal komputer, harus sama dengan ProductService
-  final String apiUrl = "http://10.117.157.139:3000/products";
+  final String apiUrl = "http://192.168.100.109:3000/products";
   late Future<List<ModelProduct>> _futureProducts;
 
   @override
@@ -61,7 +61,7 @@ class _ProductListScreenState extends State<ProductListScreen> {
       appBar: AppBar(
         title: const Text('🛒 Daftar Produk API'),
         centerTitle: true,
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.teal,
         foregroundColor: Colors.white,
         actions: [
           // Widget untuk menampilkan jumlah item di keranjang (opsional)

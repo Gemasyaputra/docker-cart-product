@@ -23,7 +23,7 @@ class CartProvider with ChangeNotifier {
   // Ambil cart dari API
   Future<void> getCart() async {
     try {
-      final url = Uri.parse("http://10.117.157.139:8000/carts");
+      final url = Uri.parse("http://192.168.100.109:8000/carts");
       final response = await http.get(url);
 
       if (response.statusCode == 200) {
@@ -47,7 +47,8 @@ class CartProvider with ChangeNotifier {
 
   // Hapus item dari cart berdasarkan ID item
   Future<void> deleteItem(int id) async {
-    final url = Uri.parse("http://10.117.157.139:8000/carts/$id");
+
+    final url = Uri.parse("http://192.168.100.109:8000/carts/$id");
 
     try {
       final response = await http.delete(url);

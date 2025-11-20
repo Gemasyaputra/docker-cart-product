@@ -20,7 +20,7 @@ class ProductDetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(product.name),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.teal,
         foregroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
@@ -36,7 +36,7 @@ class ProductDetailScreen extends StatelessWidget {
               style: const TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.w600,
-                  color: Colors.deepPurple),
+                  color: Colors.teal),
             ),
             const Divider(height: 30),
             const Text('Deskripsi:',

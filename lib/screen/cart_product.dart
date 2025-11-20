@@ -5,7 +5,7 @@ import 'package:pruductservice/screen/cart_detail_screen.dart';
 import 'package:pruductservice/model/ModelCart.dart';
 
 class CartScreen extends StatefulWidget {
-  const CartScreen({Key? key}) : super(key: key);
+  const CartScreen({super.key});
 
   @override
   State<CartScreen> createState() => _CartScreenState();
@@ -48,7 +48,7 @@ class _CartScreenState extends State<CartScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Shopping Cart'),
-        backgroundColor: Colors.blue[800],
+        backgroundColor: Colors.teal[800],
         elevation: 2,
       ),
       body: cartData == null
